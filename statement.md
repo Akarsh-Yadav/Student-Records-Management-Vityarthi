@@ -3,7 +3,7 @@
 
 ## Project Title
 
-Student Records System
+Student Records Management
 
 ## Problem Statement
 
