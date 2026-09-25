@@ -97,7 +97,7 @@ while True:
 
     elif choice == "5":
         # List students by course
-        course = input("Enter course name: ")
+        course = input("Enter course name: ").strip()
 
         students = list_students_by_course(course)
 
