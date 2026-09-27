@@ -27,6 +27,22 @@ The project uses Python dictionaries, lists, functions, loops, and conditional s
 - Git
 - GitHub
 
+## Instructions for Testing
+
+After running the program:
+
+Select option 1 to add a student.
+Enter the student's name.
+Enter the registration number.
+Enter the courses separated by commas.
+Select option 2 to add a grade.
+Enter the student name, course name, and grade.
+Select option 3 to view all student records.
+Select option 4 to check course enrollment.
+Select option 5 to list students enrolled in a course.
+Select option 6 to add another course.
+Select option 7 to exit the program.
+
 ## Project Structure
 
 ```text
