@@ -58,7 +58,7 @@ while True:
     if choice == "1":
         # Add a new student
         name = input("Enter student name: ").strip().title()
-        Reg = input("Enter student Reg.No: ").strip().title()
+        Reg = input("Enter student Reg.No: ").strip().upper()
         courses = [course.strip() for course in input("Enter courses separated by commas: ").split(",")]
 
         add_student(name, Reg, courses)
