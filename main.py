@@ -57,8 +57,8 @@ while True:
 
     if choice == "1":
         # Add a new student
-        name = input("Enter student name: ").strip()
-        Reg = input("Enter student Reg.No: ").strip()
+        name = input("Enter student name: ").strip().title()
+        Reg = input("Enter student Reg.No: ").strip().title()
         courses = [course.strip() for course in input("Enter courses separated by commas: ").split(",")]
 
         add_student(name, Reg, courses)
@@ -66,8 +66,8 @@ while True:
 
     elif choice == "2":
         # Adding grade in a course
-        name = input("Enter student name: ").strip()
-        course = input("Enter course name: ").strip()
+        name = input("Enter student name: ").strip().title()
+        course = input("Enter course name: ").strip().title()
         grade = input("Enter grade: ").strip() # Grades in character format (Ex. S,A,B,etc.)
 
         add_grade(name, course, grade)
@@ -87,8 +87,8 @@ while True:
 
     elif choice == "4":
         # Check course enrollment
-        name = input("Enter student name: ").strip()
-        course = input("Enter course name: ").strip()
+        name = input("Enter student name: ").strip().title()
+        course = input("Enter course name: ").strip().title()
 
         if is_enrolled(name, course):
             print(f"{name} is enrolled in {course}.")
@@ -97,7 +97,7 @@ while True:
 
     elif choice == "5":
         # List students by course
-        course = input("Enter course name: ").strip()
+        course = input("Enter course name: ").strip().title()
 
         students = list_students_by_course(course)
 
@@ -110,8 +110,8 @@ while True:
 
     elif choice == "6":
         # Add a course
-        name = input("Enter student name: ").strip()
-        course = input("Enter course name: ").strip()
+        name = input("Enter student name: ").strip().title()
+        course = input("Enter course name: ").strip().title()
 
         add_course(name, course)
 
