@@ -38,6 +38,10 @@ def add_course(name, course):
     if name not in student_records:
         print(f"Student '{name}' not found.")
         return
+    if course in student_records[name]["courses"]:
+        print(f"Course '{course}' already exists for student '{name}'.")
+        return
+        
     student_records[name]["courses"].append(course)
     print(f"Course '{course}' added for student '{name}'.")
 
