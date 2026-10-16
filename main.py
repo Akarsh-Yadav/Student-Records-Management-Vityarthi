@@ -68,7 +68,7 @@ while True:
         # Adding grade in a course
         name = input("Enter student name: ").strip().title()
         course = input("Enter course name: ").strip().title()
-        grade = input("Enter grade: ").strip() # Grades in character format (Ex. S,A,B,etc.)
+        grade = input("Enter grade: ").strip().title() # Grades in character format (Ex. S,A,B,etc.)
 
         add_grade(name, course, grade)
 
